@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arthur Birck</title>
+  <meta name="description" content="Arthur Birck – electrical engineering student and rower. Portfolio coming soon.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1b24'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Helvetica,Arial,sans-serif' font-size='30' font-weight='600' fill='%23e8eef2'%3EAB%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #0d1b24;
+      --fg: #e8eef2;
+      --muted: #8fa3b0;
+      --accent: #5fc4d9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      line-height: 1.5;
+    }
+    main { max-width: 34rem; width: 100%; }
+    .tag {
+      display: inline-block;
+      font-size: .75rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(95,196,217,.35);
+      border-radius: 999px;
+      padding: .3rem .8rem;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: clamp(2.4rem, 7vw, 3.6rem);
+      font-weight: 650;
+      letter-spacing: -.02em;
+      line-height: 1.05;
+      margin-bottom: 1rem;
+    }
+    p.lead { font-size: 1.15rem; color: var(--muted); margin-bottom: 2.25rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .75rem; }
+    nav a {
+      color: var(--fg);
+      text-decoration: none;
+      border: 1px solid rgba(232,238,242,.18);
+      border-radius: 8px;
+      padding: .55rem 1rem;
+      font-size: .95rem;
+      transition: border-color .15s, color .15s;
+    }
+    nav a:hover, nav a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+    .waves { margin-top: 3rem; opacity: .35; }
+    footer { margin-top: 1.25rem; font-size: .8rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="tag">Portfolio coming soon</span>
+    <h1>Arthur Birck</h1>
+    <p class="lead">Electrical engineering student and rower. I'm currently building a GPS rowing computer, and my portfolio will be here soon.</p>
+    <nav>
+      <a href="https://github.com/arthurbirck">GitHub</a>
+      <a href="https://riggr.dk">Riggr</a>
+    </nav>
+    <svg class="waves" width="120" height="36" viewBox="0 0 120 36" fill="none" stroke="#5fc4d9" stroke-width="3" stroke-linecap="round" aria-hidden="true">
+      <path d="M4 8c12-8 24 8 36 0s24 8 36 0 24 8 36 0"/>
+      <path d="M4 18c12-8 24 8 36 0s24 8 36 0 24 8 36 0"/>
+      <path d="M4 28c12-8 24 8 36 0s24 8 36 0 24 8 36 0"/>
+    </svg>
+    <footer>&copy; <span id="y">2026</span> Arthur Birck</footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
