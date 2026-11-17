@@ -76,7 +76,9 @@
     <h1>Arthur Birck</h1>
     <p class="lead">Electrical engineering student and rower. I'm currently building a GPS rowing computer, and my portfolio will be here soon.</p>
     <nav>
-      <a href="https://github.com/arthurbirck">GitHub</a>
+      <a id="mail" href="#" data-u="arthur" data-d="arthurbirck.dk">Email</a>
+      <a href="https://www.linkedin.com/in/arthur-birck/" rel="me">LinkedIn</a>
+      <a href="https://github.com/arthurbirck" rel="me">GitHub</a>
       <a href="https://riggr.dk">Riggr</a>
     </nav>
     <svg class="waves" width="120" height="36" viewBox="0 0 120 36" fill="none" stroke="#5fc4d9" stroke-width="3" stroke-linecap="round" aria-hidden="true">
@@ -86,6 +88,14 @@
     </svg>
     <footer>&copy; <span id="y">2026</span> Arthur Birck</footer>
   </main>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    (function () {
+      var m = document.getElementById('mail');
+      var a = m.dataset.u + '@' + m.dataset.d;
+      m.href = 'mailto:' + a;
+      m.title = a;
+    })();
+  </script>
 </body>
 </html>
