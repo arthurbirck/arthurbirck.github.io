@@ -1,0 +1,14 @@
+# Arthur Birck
+
+> Personal website of Arthur Birck, an electrical engineering student at DTU (Technical University of Denmark) and rower in Copenhagen. He is building Riggr, a GPS rowing computer. A full portfolio is coming soon.
+
+## Links
+
+- [Website](https://arthurbirck.dk/): Personal landing page
+- [LinkedIn](https://www.linkedin.com/in/arthur-birck/): Professional profile
+- [GitHub](https://github.com/arthurbirck): Code and projects
+- [Riggr](https://riggr.dk/): The rowing computer he is building
+
+## Contact
+
+- Email: arthur@arthurbirck.dk
